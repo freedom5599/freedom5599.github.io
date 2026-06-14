@@ -1,7 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的GitHub博客</title>
+    <style>
+        body { max-width: 800px; margin: 0 auto; padding: 20px; font-family: Arial, sans-serif; }
+        .image-container { margin: 30px 0; }
+        img { display: block; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    </style>
+</head>
 <body>
-<h1>我的博客</h1>
-<p>第一篇文章</p>
+    <h1>我的第一篇博客</h1>
+    
+    <div class="image-container">
+        <h3>1. 相对路径引用的图片</h3>
+        <img src="./images/1.jpg" alt="本地相对路径图片" width="600">
+        <p>说明：图片存放在本仓库的images文件夹中，使用相对于index.html的路径引用</p>
+    </div>
+
+    <div class="image-container">
+        <h3>2. 绝对路径引用的图片</h3>
+        <img src="https://raw.githubusercontent.com/freedom5599/freedom5599.github.io/main/images/2.jpg" alt="远程绝对路径图片" width="600">
+        <p>说明：使用图片的完整网络URL引用，可在任何网站访问</p>
+    </div>
 </body>
 </html>
